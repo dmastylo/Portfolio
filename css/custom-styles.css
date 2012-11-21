@@ -26,19 +26,19 @@ body {
     width: 750px;
     margin-left: auto;
     margin-right: auto;
-    height: 550px;
+    height: 485px;
     /*border: 1px solid #666;*/
     /*background: #666;*/
     overflow: auto; /* allow content to scroll inside element */
     text-align: left;
-    -moz-border-radius: 25px;
+    /*-moz-border-radius: 25px;
     -webkit-border-radius: 25px;
-    border-radius: 25px;
+    border-radius: 25px;*/
 }
 
 .left-image {
     position: absolute;
-    top: 155px;
+    top: 140px;
     left: 50px;
     width: 246px;
     height: 345px;
@@ -48,14 +48,13 @@ body {
 .right-text {
     position: relative;
     width: 165px;
-    top: 125px;
-    left: 475px;
-    padding-left: 15px;
+    top: 175px;
+    left: 500px;
     text-shadow: -0.2em 0.2em 0.2em black;
     background: #272822;
-    -moz-border-radius: 10px;
+    /*-moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    border-radius: 10px;
+    border-radius: 10px;*/
 }
 
 /* keeps the footer stuck to the bottom of the .content div */
@@ -64,27 +63,11 @@ body {
     background-color: #000;
     height: 50px;
     width: 100%;
-    /*width: 750px;*/
-    bottom: 0;
-    left: 0;
     color: #ffffff;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 25px;
-    /*-moz-border-radius: 0 0 25px 25px;
-    -webkit-border-radius: 0 0 25px 25px;
-    border-radius: 0 0 25px 25px;*/
 }
 
-/* Keep the list in one line and space it out */
-.footer-title a {
-    display: block;
-    color: white;
-    padding-top: 15px;  
-    padding-left: 25px;
-    padding-right: 85px;
-    /*padding: 27px 50px;  */
-    float: left;
+.footer-list {
+    margin-left: 362px;
 }
 
 .footer-list ul, li {
@@ -93,6 +76,7 @@ body {
 
 .footer ul li a {
     display: block;
+    font-family: 'Ubuntu', sans-serif;
     color: white;
     padding-top: 15px;
     padding-left: 125px;
