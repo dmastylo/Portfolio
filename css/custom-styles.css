@@ -6,13 +6,14 @@ html, body {
 }
 
 body {
-    text-align: center;
+    text-align: center; /* Old IE fix for centering */
     background-color: #F2F2F2;
     color: #5a5a5a;
-    min-width: 626px;
-    min-height: 400px;
+    min-width: 750px;
+    min-height: 550px;
 }
 
+/* Body */
 .vertical {
     float: left;
     height: 50%;
@@ -26,8 +27,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: 550px;
-    border: 1px solid silver;
-    background: #666;
+    /*border: 1px solid silver;*/
+    /*background: #666;*/
     overflow: auto; /* allow content to scroll inside element */
     text-align: left;
     -moz-border-radius: 25px;
@@ -35,19 +36,33 @@ body {
     border-radius: 25px;
 }
 
-.header {
+.left-image {
     position: absolute;
-    padding-top: 10px;
-    padding-left: 15px;
-    height: 50px;
-    color: #ffffff;
+    top: 100px;
+    left: 50px;
+    width: 226px;
+    height: 400px;
+    background-image: url('../img/suit-cutout.png');
 }
 
+.right-text {
+    position: relative;
+    width: 165px;
+    top: 125px;
+    left: 475px;
+    padding-left: 15px;
+    text-shadow: -0.2em 0.2em 0.2em black;
+    background: #272822;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* keeps the footer stuck to the bottom of the .content div */
 .footer {
-    /* keeps the footer stuck to the bottom of the .content div */
     position: absolute;
     background-color: #000;
-    height: 75px;
+    height: 50px;
     width: 750px;
     bottom: 0;
     left: 0;
@@ -58,6 +73,16 @@ body {
 }
 
 /* Keep the list in one line and space it out */
+.footer-title a {
+    display: block;
+    color: white;
+    padding-top: 15px;  
+    padding-left: 25px;
+    padding-right: 85px;
+    /*padding: 27px 50px;  */
+    float: left;
+}
+
 .footer-list ul, li {
     display: inline;
 }
@@ -65,9 +90,11 @@ body {
 .footer ul li a {
     display: block;
     color: white;
-    padding: 27px 65px;  
+    padding-top: 15px;
+    padding-left: 125px;
+    /*padding: 27px 70px;*/
     float: left;
-}   
+}
 
 h1 {
     color: #fff;
