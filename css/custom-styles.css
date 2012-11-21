@@ -1,9 +1,4 @@
 /* GLOBAL STYLES */
-* {
-    margin: 0;
-    padding: 0;  
-}
-
 html, body {
     height: 100%;
     margin: 0;
@@ -49,7 +44,7 @@ body {
 }
 
 .footer {
-    /* keeps the footer stuck to the bottom of the #content div */
+    /* keeps the footer stuck to the bottom of the .content div */
     position: absolute;
     background-color: #000;
     height: 75px;
