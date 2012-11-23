@@ -1,16 +1,21 @@
 /* GLOBAL STYLES */
-html, body {
-    height: 100%;
+* {
     margin: 0;
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
-    text-align: center; /* Old IE fix for centering */
-    background-color: #272822;
-    color: #5a5a5a;
     min-width: 750px;
-    min-height: 550px;
+    min-height: 485px;
+    text-align: center; /* IE fix for centering */
+    background-color: #272822;
+    color: #A4A4A4;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
 }
 
 /* Body */
@@ -24,68 +29,91 @@ body {
 .content {
     position: relative; /* so that the footer stays at the bottom */
     width: 750px;
-    margin-left: auto;
-    margin-right: auto;
     height: 485px;
+    margin: 0 auto;
     /*border: 1px solid #666;*/
-    /*background: #666;*/
     overflow: auto; /* allow content to scroll inside element */
     text-align: left;
-    /*-moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 25px;*/
+}
+
+.wrapper {
+    overflow-x: hidden; /* Prevents other slides from being seen */
+}
+
+.steps {
+    width: 750px;
+    height: 485px;
+    overflow: hidden;
+}
+
+.step {
+    position: relative;
+    float: left;
+    width: 750px;
+    height: 485px;
+}
+
+.index-text {
+    position: relative;
+    width: 350px;
+    top: 30%;
+    margin: 0 auto;
+    text-shadow: -0.2em 0.2em 0.2em black;
 }
 
 .left-image {
-    position: absolute;
+    position: relative;
+    float: left;
     top: 140px;
-    left: 50px;
     width: 246px;
     height: 345px;
     background-image: url('../img/sitting-laptop.png');
 }
 
-.right-text {
-    position: relative;
-    width: 165px;
-    top: 175px;
-    left: 500px;
-    text-shadow: -0.2em 0.2em 0.2em black;
-    background: #272822;
-    /*-moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;*/
+.about-text {
+    position: absolute;
+    float: left;
+    width: 400px;
+    left: 40%;
+    top: 25%;
+    text-shadow: -0.1em 0.1em 0.1em black;
 }
 
-/* keeps the footer stuck to the bottom of the .content div */
+.about-text ul {
+    list-style: none;
+}
+
 .footer {
-    position: absolute;
-    background-color: #000;
-    height: 50px;
     width: 100%;
-    color: #ffffff;
+    height: 50px;
+    text-align: center;
+    background-color: #000;
 }
 
 .footer-list {
-    margin-left: 362px;
+    width: 750px;
+    margin: 0 auto;
+    list-style: none;
 }
 
-.footer-list ul, li {
-    display: inline;
+.footer-list li {
+    display: inline-block;
+    padding: 0 45px;
 }
 
-.footer ul li a {
-    display: block;
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    padding-top: 15px;
-    padding-left: 125px;
-    /*padding: 27px 70px;*/
+.footer-list a {
     float: left;
+    padding: 15px 15px;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: #F2F2F2;
 }
 
-h1 {
-    color: #fff;
-    margin: 0;
-    padding: 0;
+.footer-list li a:hover,
+.footer-list .selected a {
+    background: #d8d8d8;
+    color: #666;
+    text-shadow: 1px 1px 1px #fff;
+    -webkit-transition: color 0.25s ease-in;
+    -webkit-transition: background 0.25s ease-in;
 }
