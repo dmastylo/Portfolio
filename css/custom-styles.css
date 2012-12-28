@@ -53,6 +53,11 @@ body {
     height: 485px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+/* Index */
 .index-text {
     position: relative;
     width: 350px;
@@ -61,6 +66,7 @@ body {
     text-shadow: -0.2em 0.2em 0.2em black;
 }
 
+/* About Page*/
 .left-image {
     position: relative;
     float: left;
@@ -83,6 +89,51 @@ body {
     list-style: none;
 }
 
+/* Portfolio */
+.portfolio-header {
+    text-align: center;
+}
+
+.row-1 {
+    list-style: none;
+    /*margin: 0 auto;*/
+}
+
+.row-1 li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.outer {
+    position: relative;
+    height: 225px;
+    width: 225px;
+    overflow: hidden;
+}
+
+.portfolio-img {
+    position: absolute;
+    height: 225px;
+    width: 225px;
+}
+
+.portfolio-img-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.inner {
+    position: absolute;
+    margin-top: -225px;
+    padding: 5px 10px;
+    height: 215px;
+    width: 205px;
+    color: #000;
+    background: rgb(220, 220, 220);
+    background: rgba(220, 220, 220, 0.8);
+}
+
+/* Footer */
 .footer {
     width: 100%;
     height: 50px;
