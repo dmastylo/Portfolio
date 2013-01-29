@@ -1,170 +1,228 @@
 /* GLOBAL STYLES */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    min-width: 750px;
-    min-height: 485px;
-    text-align: center; /* IE fix for centering */
-    background-color: #272822;
-    color: #A4A4A4;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 300;
+  min-width: 750px;
+  min-height: 485px;
+  text-align: center; /* IE fix for centering */
+  background-color: #272822;
+  color: #A4A4A4;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+h3 {
+  line-height: 2em;
 }
 
 /* Body */
 .vertical {
-    float: left;
-    height: 50%;
-    margin-top: -275px; /* half vertical height*/
-    width: 100%;
+  float: left;
+  height: 50%;
+  margin-top: -275px; /* close to half vertical height*/
+  width: 100%;
 }
 
 .content {
-    position: relative; /* so that the footer stays at the bottom */
-    width: 750px;
-    height: 485px;
-    margin: 0 auto;
-    /*border: 1px solid #666;*/
-    overflow: auto; /* allow content to scroll inside element */
-    text-align: left;
+  position: relative; /* so that the footer stays at the bottom */
+  width: 750px;
+  height: 485px;
+  margin: 0 auto;
+  /*border: 1px solid #666;*/
+  /*border-radius: 50px;*/
+  overflow: auto; /* allow content to scroll inside element */
+  text-align: left;
 }
 
 .wrapper {
-    overflow-x: hidden; /* Prevents other slides from being seen */
+  overflow-x: hidden; /* Prevents other slides from being seen */
 }
 
 .steps {
-    width: 750px;
-    height: 485px;
-    overflow: hidden;
+  width: 750px;
+  height: 485px;
+  overflow: hidden;
 }
 
 .step {
-    position: relative;
-    float: left;
-    width: 750px;
-    height: 485px;
-}
-
-.bold {
-    font-weight: bold;
+  position: relative;
+  float: left;
+  width: 750px;
+  height: 485px;
 }
 
 /* Index */
 .index-text {
-    position: relative;
-    width: 350px;
-    top: 30%;
-    margin: 0 auto;
-    text-shadow: -0.2em 0.2em 0.2em black;
+  position: relative;
+  width: 260px;
+  top: 30%;
+  margin: 0 auto;
+  line-height: 3em;
+  text-shadow: -0.15em 0.15em 0.15em black;
 }
 
 /* About Page*/
-.left-image {
-    position: relative;
-    float: left;
-    top: 140px;
-    width: 246px;
-    height: 345px;
-    background-image: url('../img/sitting-laptop.png');
+.about-header {
+  position: relative;
+  text-align: center;
+  top: 20px;
+}
+
+.right-image {
+  position: relative;
+  float: right;
+  top: 47px;
+  width: 246px;
+  height: 345px;
+  background-image: url('../img/sitting-laptop.png');
+  /*background-image: url('../img/sitting-laptop-blurred.png');*/
 }
 
 .about-text {
-    position: absolute;
-    float: left;
-    width: 400px;
-    left: 40%;
-    top: 25%;
-    text-shadow: -0.1em 0.1em 0.1em black;
+  position: absolute;
+  width: 450px;
+  margin-left: 15px;
+  top: 35%;
+  line-height: 1.4em;
 }
 
 .about-text ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* Portfolio */
-.portfolio-header {
-    text-align: center;
+.page-header {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.centered-menu {
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
 }
 
 .row-1 {
-    list-style: none;
-    /*margin: 0 auto;*/
+  position: relative;
+  clear: left;
+  float: left;
+  left: 50%;
+  list-style: none;
 }
 
 .row-1 li {
-    display: inline-block;
-    margin: 0 5px;
+  position: relative;
+  display: block;
+  float: left;
+  right: 50%;
+  margin: 0 10px;
 }
 
 .outer {
-    position: relative;
-    height: 225px;
-    width: 225px;
-    overflow: hidden;
+  position: relative;
+  height: 225px;
+  width: 225px;
+  overflow: hidden;
 }
 
 .portfolio-img {
-    position: absolute;
-    height: 225px;
-    width: 225px;
+  position: absolute;
+  height: 225px;
+  width: 225px;
 }
 
 .portfolio-img-header {
-    font-weight: bold;
-    text-align: center;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
 }
 
 .inner {
-    position: absolute;
-    margin-top: -225px;
-    padding: 5px 10px;
-    height: 215px;
-    width: 205px;
-    color: #000;
-    background: rgb(220, 220, 220);
-    background: rgba(220, 220, 220, 0.8);
+  position: absolute;
+  margin-top: -225px;
+  padding: 5px 10px;
+  height: 215px;
+  width: 205px;
+  color: #000;
+  background: rgb(220, 220, 220);
+  background: rgba(220, 220, 220, 0.8);
+}
+
+.inner a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.github {
+  margin-top: 70px;
+}
+
+.github li {
+  margin: 0;
+}
+
+.github a {
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+.github a:hover {
+  color: #666;
+  -webkit-transition: color 0.25s linear;
+  -moz-transition: color 0.25s linear;
+}
+
+.github-logo {
+  margin-top: -40px;
 }
 
 /* Footer */
 .footer {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    background-color: #000;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  /*background-color: #000;*/
 }
 
 .footer-list {
-    width: 750px;
-    margin: 0 auto;
-    list-style: none;
+  width: 750px;
+  margin: 0 auto;
+  list-style: none;
 }
 
 .footer-list li {
-    display: inline-block;
-    padding: 0 45px;
+  display: inline-block;
+  padding: 0 40px;
 }
 
 .footer-list a {
-    float: left;
-    padding: 15px 15px;
-    font-family: 'Ubuntu', sans-serif;
-    text-decoration: none;
-    color: #F2F2F2;
+  float: left;
+  padding: 15px 15px;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  color: #F2F2F2;
 }
 
 .footer-list li a:hover,
 .footer-list .selected a {
-    background: #d8d8d8;
-    color: #666;
-    text-shadow: 1px 1px 1px #fff;
-    -webkit-transition: color 0.25s ease-in;
-    -webkit-transition: background 0.25s ease-in;
+  background: #d8d8d8;
+  color: #666;
+  text-shadow: 1px 1px 1px #fff;
+  border-radius: 10px;
+  -webkit-transition: color 0.25s linear;
+  -moz-transition: color 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+  -moz-transition: background 0.25s linear;
 }
